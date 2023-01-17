@@ -2,7 +2,9 @@
 import skimage.transform, numpy as np, os, sys
 import imageio.v2 as imageio
 from PIL import Image
+from PIL import ImageFile
 Image.LOAD_TRUNCATED_IMAGES = True
+ImageFile.LOAD_TRUNCATED_IMAGES = True
 
 def save_img(out_path, img):
     img = np.clip(img, 0, 255).astype(np.uint8)
