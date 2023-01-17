@@ -7,6 +7,12 @@ styles
 pngs
 preds
 
+checkpoints
+models
+results
+test
+
+
 *.sw*
 data
 __pycache__/
